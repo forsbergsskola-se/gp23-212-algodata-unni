@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class Program
+class Iterator
 {
     static void Main()
     {
@@ -28,4 +28,5 @@ class Program
         }
         Console.WriteLine("Sum: " + sum);
     }
+    
 }
