@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using TurboCollections;
 
 class Iterator
 {
@@ -27,6 +28,16 @@ class Iterator
             sum += number;
         }
         Console.WriteLine("Sum: " + sum);
+
+        foreach (var number in TurboMath.GetEvenNumbers(12))
+        {
+            Console.WriteLine(number);
+        }
+        
+    }
+
+    
+        
     }
     
 }
