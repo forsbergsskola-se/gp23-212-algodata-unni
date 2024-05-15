@@ -18,6 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\212_P_2_Iterator\212_P_2_Iterator.csproj" />
       <ProjectReference Include="..\TurboCollections\TurboCollections.csproj" />
     </ItemGroup>
 
