@@ -3,17 +3,23 @@ using System.Collections;
 public class TurboLinkedStack<T> : IEnumerable<T> {
     class Node {
         public T Value;
-        public Node Previous;
+        public Node? Previous;
     }
     Node LastNode;
 
-    public void Push(T item) {
-        throw new NotImplementedException();
-        // Insert Code from AddNumber Example in #4 here
+    public void Push(T item)
+    {
+        var newNode = new Node
+        {
+            Value = item,
+            Previous = null
+
+        };
     }
 
     public T Peek() {
         throw new NotImplementedException();
+        
         // Return the Value of Last Node here.
     }
 
