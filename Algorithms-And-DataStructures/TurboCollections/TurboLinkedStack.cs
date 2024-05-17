@@ -1,20 +1,17 @@
 using System.Collections;
 
 public class TurboLinkedStack<T> : IEnumerable<T> {
-    class Node {
+    public class Node {
         public T Value;
-        public Node? Previous;
+        public Node Previous;
     }
-    Node LastNode;
+
+    public Node LastNode;
 
     public void Push(T item)
     {
-        var newNode = new Node
-        {
-            Value = item,
-            Previous = null
-
-        };
+        Node newNode = new Node { Value = item, Previous = LastNode };
+        LastNode = newNode;
     }
 
     public T Peek() {
