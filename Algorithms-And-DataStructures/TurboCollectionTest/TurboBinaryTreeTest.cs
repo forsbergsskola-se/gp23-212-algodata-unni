@@ -19,11 +19,11 @@ namespace TurboCollectionTest
 
             // Assert
             Assert.NotNull(tree.Root);
-            Assert.AreEqual(10, tree.Root.Data); //10 should be the root
+            Assert.That(tree.Root.Data, Is.EqualTo(10)); //10 should be the root
             Assert.NotNull(tree.Root.Left);
-            Assert.AreEqual(5, tree.Root.Left.Data); //5 should be left 
+            Assert.That(tree.Root.Left.Data, Is.EqualTo(5)); //5 should be left 
             Assert.NotNull(tree.Root.Right);
-            Assert.AreEqual(15, tree.Root.Right.Data); //15 right, highest number
+            Assert.That(tree.Root.Right.Data, Is.EqualTo(15)); //15 right, highest number
         }
 
         [Test]
