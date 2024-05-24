@@ -10,8 +10,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "212_P_2_Iterator", "212_P_2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurboCollectionTest", "TurboCollectionTest\TurboCollectionTest.csproj", "{BF383736-1A12-49CE-846C-D193BAC99DCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "215_Hash", "215_Hash\215_Hash.csproj", "{B255D48E-33F3-47A7-BEBA-939607E6B788}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,9 +36,5 @@ Global
 		{BF383736-1A12-49CE-846C-D193BAC99DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF383736-1A12-49CE-846C-D193BAC99DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF383736-1A12-49CE-846C-D193BAC99DCA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B255D48E-33F3-47A7-BEBA-939607E6B788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B255D48E-33F3-47A7-BEBA-939607E6B788}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B255D48E-33F3-47A7-BEBA-939607E6B788}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B255D48E-33F3-47A7-BEBA-939607E6B788}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

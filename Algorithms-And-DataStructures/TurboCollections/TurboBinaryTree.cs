@@ -64,5 +64,56 @@ namespace TurboCollections
                 InsertNode(data, Root);
             }
         }
+        
+        public bool Delete(int data)
+        {
+            Root = DeleteNode(Root, data, out bool deleted);
+            return deleted;
+        }
+
+        private Node DeleteNode(Node node, int data, out bool deleted)
+        {
+            deleted = false;
+
+            if (node == null) return null;
+
+            if (data < node.Data)
+            {
+                node.Left = DeleteNode(node.Left, data, out deleted);
+            }
+            else if (data > node.Data)
+            {
+                node.Right = DeleteNode(node.Right, data, out deleted);
+            }
+            else
+            {
+                deleted = true;
+
+                if (node.Left == null)
+                {
+                    return node.Right;
+                }
+                else if (node.Right == null)
+                {
+                    return node.Left;
+                }
+
+                node.Data = MinValue(node.Right);
+                node.Right = DeleteNode(node.Right, node.Data, out _);
+            }
+
+            return node;
+        }
+
+        private int MinValue(Node node)
+        {
+            int minValue = node.Data;
+            while (node.Left != null)
+            {
+                node = node.Left;
+                minValue = node.Data;
+            }
+            return minValue;
+        }
     }
-}
+    }

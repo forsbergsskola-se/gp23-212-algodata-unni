@@ -15,7 +15,16 @@ public class TurboLinkedStack<T> : IEnumerable<T> {
     }
 
     public T Peek() {
-        throw new NotImplementedException();
+
+        if (LastNode != null)
+        {
+            return LastNode.Value;
+        }
+        else
+        {
+            throw new NotImplementedException();
+        }
+        
         
         // Return the Value of Last Node here.
     }
